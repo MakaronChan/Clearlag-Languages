@@ -11,7 +11,7 @@ command.error.onlyForPlayer()=&cこのコマンドはプレイヤーのみが使
 
 ##]-> /lagg
 command.lagg.nopermission()=&cこのコマンドを使用する権限がありません！
-command.lagg.header()=&3-------------(&b&lClearlag コマンド&3)-------------
+command.lagg.header()=&3-------------[&b&lClearlag コマンド&3]-------------
 command.lagg.footer()=&3----------------------------------------------------
 command.lagg.helpline({name},{desc})= &4- &8/&3lagg &b{name} &f -  {desc}
 
@@ -81,8 +81,8 @@ command.check.printed({removed1},{mobs},{animals},{players},{chunks},{activehopp
 &3   有効なMobスポナー: &b{spawners}
 &3   稼働時間: &b{uptime}
 &3   現在のTPS: &b{tps}
-&3   使用中のRAM: &b{usedmemory}&7/&b{maxmemory} &7MB
-&3   空きメモリ: &b{freememory} &7MB
+&3   使用中のRAM: &b{maxmemory}&7のうち&b{usedmemory} &7MBを使用中
+&3   空きメモリ: &b{freememory} &7MBの空きメモリがあります。
 }
 command.check.footer()=&4*&3&m                                                                             &4*
 
@@ -170,9 +170,9 @@ command.sampleticks.rawheader()=&c生のtickタイミング: &7（通常の目�
 command.sampleticks.rawprint({time})=&8 - {time}
 command.sampleticks.print({large},{small},{average},{spikes})={
 &atick統計: &7（通常の目盛りは０～５０ミリ秒）
-&3   最大tick: {large}
-&3   最小tick: {small}
-&3   平均tick: {average}
+&3   最大ティック: {large}
+&3   最小ティック: {small}
+&3   平均ティック: {average}
 &3   スパイク: {spikes}
 }
 
@@ -195,8 +195,8 @@ command.tps.print({tps})=&6[&aClearLag&6] &a{tps}
 ##]-> /lagg unloadchunks
 command.unloadchunks.name()=unloadchunks
 command.unloadchunks.usage()=
-command.unloadchunks.desc()=(未使用チャンクをアンロード)
-command.unloadchunks.print({chunks})=&6[&aClearLag&6] &3{chunks}&b個のチャンクがアンロードされました！
+command.unloadchunks.desc()=(使っていないチャンクを読み込まないようにします。)
+command.unloadchunks.print({chunks})=&6[&aClearLag&6] &3{chunks}&b個のチャンクが読み込まれないようにされました！
 
 ##]-> /lagg memory
 command.memory.name()=memory
